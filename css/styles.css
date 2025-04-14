@@ -61,10 +61,18 @@ header .hero {
 header .hero h2 {
     font-size: 2.5rem;
     font-weight: 700;
+<<<<<<< HEAD
 }
 
 header .hero h2 span {
     color: #e63946;
+=======
+    color: #f76c5e; /* Set the color to orange (using #f76c5e) */
+}
+
+header .hero h2 span {
+    color: #f76c5e; /* Set the span color to orange as well */
+>>>>>>> c515168 (Initial commit)
 }
 
 header .hero p {
