@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kushal's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Kushal</h1>
-            </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Kushal</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h2>Hi, I'm <span>Kushal</span></h2>
-            <p>A passionate Web Developer & Designer</p>
-        </div>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Kushal</span></h1>
+                <p>I build sleek, responsive, and user-centric web experiences.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer and designer with a passion for creating intuitive and beautiful websites. I specialize in front-end development and love working with HTML, CSS, JavaScript, and modern web technologies to bring ideas to life. In my spare time, I enjoy learning new web development trends and contributing to open-source projects.</p>
-    </section>
+    <main>
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>I’m a creative front-end developer passionate about building intuitive and engaging digital experiences. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I create interfaces that not only look great but feel amazing to use.</p>
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A brief description of what this project is about. Showcase your work and your skills.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>A brief description of what this project is about. Showcase your work and your skills.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>A brief description of what this project is about. Showcase your work and your skills.</p>
-        </div>
-    </section>
+        <section id="projects" class="section projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal website built with HTML, CSS, and subtle animations to showcase my work.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>A sleek weather app using OpenWeatherMap API, built with vanilla JS and styled with Flexbox & Grid.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Todo List</h3>
+                    <p>Fully responsive todo app with data persistence and dark mode toggle — UX focused.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to work together or just say hi, feel free to reach out!</p>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: +123-456-7890</p>
-    </section>
+        <section id="contact" class="section contact">
+            <h2>Let’s Connect</h2>
+            <p>Have a project in mind or want to work together? Drop me a message!</p>
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2025 Kushal | All Rights Reserved</p>
+    <footer class="footer">
+        <p>&copy; 2025 Kushal | Built with 💻 & ❤️</p>
     </footer>
+
 </body>
 </html>
