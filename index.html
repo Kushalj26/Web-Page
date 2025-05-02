@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kushal's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kushal | DevOps Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Kushal</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">Kushal</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Kushal</span></h1>
+        <p>DevOps Intern | Infrastructure Architect | Automation Specialist</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+      </div>
+    </section>
+  </header>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Kushal</span></h1>
-                <p>I build sleek, responsive, and user-centric web experiences.</p>
-                <a href="#projects" class="btn">View My Work</a>
-            </div>
-        </section>
-    </header>
+  <main>
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>I am a DevOps Engineer Intern at Idea Infinity IT Solutions Pvt. Ltd., Bangalore, where I worked for 16 weeks (January–April 2025). I specialize in building automated, scalable infrastructure using tools like Docker, Kubernetes, Jenkins, and Terraform. I thrive at the intersection of development and operations, delivering seamless CI/CD pipelines, cloud-native architectures, and efficient DevOps workflows.</p>
+    </section>
 
-    <main>
-        <section id="about" class="section about">
-            <h2>About Me</h2>
-            <p>I’m a creative front-end developer passionate about building intuitive and engaging digital experiences. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I create interfaces that not only look great but feel amazing to use.</p>
-        </section>
+    <section id="highlights" class="section highlights">
+      <h2>Internship Highlights</h2>
+      <div class="timeline">
+        <div class="timeline-item">Set up Kubernetes cluster with 1 master (Ubuntu) and 2 workers (Ubuntu + SUSE)</div>
+        <div class="timeline-item">Designed CI/CD pipeline using Jenkins, integrated with Ansible for deployment</div>
+        <div class="timeline-item">Provisioned infrastructure using Vagrant + Ansible with automated Apache HTTPS setup</div>
+        <div class="timeline-item">Managed multicloud infrastructure using Terraform for AWS & GCP</div>
+        <div class="timeline-item">Monitored and maintained web services with systemd, Apache logs, and load testing tools</div>
+      </div>
+    </section>
 
-        <section id="projects" class="section projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>My personal website built with HTML, CSS, and subtle animations to showcase my work.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Weather App</h3>
-                    <p>A sleek weather app using OpenWeatherMap API, built with vanilla JS and styled with Flexbox & Grid.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Todo List</h3>
-                    <p>Fully responsive todo app with data persistence and dark mode toggle — UX focused.</p>
-                </div>
-            </div>
-        </section>
+    <section id="projects" class="section projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Production-Ready Kubernetes Cluster</h3>
+          <p>Set up a high-availability Kubernetes cluster from scratch using kubeadm, Docker, and private networking on multiple VMs.</p>
+        </div>
+        <div class="project-card">
+          <h3>Jenkins-Ansible CI/CD Pipeline</h3>
+          <p>Created a robust CI/CD pipeline for automated build, test, and deployment to web servers using Jenkins + Ansible playbooks.</p>
+        </div>
+        <div class="project-card">
+          <h3>Terraform Multi-Cloud Infra</h3>
+          <p>Wrote Terraform modules to provision EC2 instances, VPCs, and services in AWS and GCP environments for hybrid cloud setups.</p>
+        </div>
+        <div class="project-card">
+          <h3>Apache with HTTPS via Ansible</h3>
+          <p>Automated Apache setup with self-signed SSL certs on Ubuntu & SUSE using Ansible roles, ensuring secure HTTP connections.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact" class="section contact">
-            <h2>Let’s Connect</h2>
-            <p>Have a project in mind or want to work together? Drop me a message!</p>
-            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p><strong>Phone:</strong> +123-456-7890</p>
-        </section>
-    </main>
+    <section id="skills" class="section skills">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">Docker</div>
+        <div class="skill-card">Kubernetes</div>
+        <div class="skill-card">Jenkins</div>
+        <div class="skill-card">Ansible</div>
+        <div class="skill-card">Terraform</div>
+        <div class="skill-card">AWS</div>
+        <div class="skill-card">GCP</div>
+        <div class="skill-card">Apache</div>
+        <div class="skill-card">Vagrant</div>
+        <div class="skill-card">GitHub Actions</div>
+      </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Kushal | Built with 💻 & ❤️</p>
-    </footer>
+    <section id="contact" class="section contact">
+      <h2>Let’s Connect</h2>
+      <p>Have a project in mind or want to collaborate? Reach out to me!</p>
+      <p><strong>Email:</strong> <a href="mailto:kushal@example.com">kushal@example.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kushal">linkedin.com/in/kushal</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kushal">github.com/kushal</a></p>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <p>&copy; 2025 Kushal | Built with 💻 DevOps & ❤️ UX</p>
+  </footer>
 </body>
 </html>
